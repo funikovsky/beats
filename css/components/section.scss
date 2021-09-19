@@ -20,7 +20,7 @@
   position: relative;
   &::after {
     position: absolute;
-    content: url(../../img/treangle.png);
+    content: url(../img/treangle.png);
     top: 0;
     left: 60px;
     
@@ -28,7 +28,7 @@
   }
   &::before {
     position: absolute;
-    content: url(../../img/Polygon.png);
+    content: url(../img/Polygon.png);
     top: 100%;
     right: 100px;
     transform: translateY(-44%);
@@ -38,7 +38,7 @@
   }
 }
 .section__form {
-  background:url(../../img/blacktheme.jpg)center center/cover no-repeat;
+  background:url(../img/blacktheme.jpg)center center/cover no-repeat;
   color: white;
 }
 .section__title-form {
