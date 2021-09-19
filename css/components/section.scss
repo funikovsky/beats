@@ -1,0 +1,46 @@
+.section {
+  height: 100vh;
+  min-height: 652px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section__title {
+  font-weight: bold;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.section__title-reviews {
+  margin-bottom: 34px;
+}
+
+.section--decor {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url(../../img/treangle.png);
+    top: 0;
+    left: 60px;
+    
+    
+  }
+  &::before {
+    position: absolute;
+    content: url(../../img/Polygon.png);
+    top: 100%;
+    right: 100px;
+    transform: translateY(-44%);
+
+
+
+  }
+}
+.section__form {
+  background:url(../../img/blacktheme.jpg)center center/cover no-repeat;
+  color: white;
+}
+.section__title-form {
+  margin-bottom: 58px;
+}
