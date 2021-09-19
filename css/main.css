@@ -292,13 +292,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section--decor::after {
   position: absolute;
-  content: url(../../img/treangle.png);
+  content: url(../img/treangle.png);
   top: 0;
   left: 60px;
 }
 .section--decor::before {
   position: absolute;
-  content: url(../../img/Polygon.png);
+  content: url(../img/Polygon.png);
   top: 100%;
   right: 100px;
   -webkit-transform: translateY(-44%);
@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section__form {
-  background: url(../../img/blacktheme.jpg) center center/cover no-repeat;
+  background: url(../img/blacktheme.jpg) center center/cover no-repeat;
   color: white;
 }
 
