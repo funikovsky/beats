@@ -6,7 +6,10 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  margin-right: 8px;
+  margin-right: 9px;
+  &:last-child {
+    margin-right: 0;
+  }
   
   
   
