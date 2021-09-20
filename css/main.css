@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero::before {
   position: absolute;
-  content: url(../../img/connect1.png);
+  content: url(../img/connect1.png);
   bottom: -20px;
   right: 100px;
 }
