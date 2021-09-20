@@ -242,6 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn--theme--darkred {
   background: #CA1B36;
+  color: white;
 }
 .btn--theme--darkred:hover {
   color: #E01F3D;
@@ -339,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .benefits__item::before {
-  content: url(../../img/shape.png);
+  content: url(../img/shape.png);
   position: absolute;
   top: 50px;
   right: 0;
@@ -470,7 +471,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  margin-right: 8px;
+  margin-right: 9px;
+}
+.interactive-avatar:last-child {
+  margin-right: 0;
 }
 .interactive-avatar--active {
   border: 4px solid #E01F3D;
