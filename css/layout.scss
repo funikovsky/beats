@@ -18,27 +18,38 @@ nav, footer,header,aside {
 html, body {
   font-family: 'Play', sans-serif;
   height: 100%;
-  width: 100%;
-  font-size: 100%;
   line-height: 1.4;
-  font-size: 16px;
+  
   font-style: normal;
   
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+html {
+  font-size: $baseFontSixe;
+
+  @include tablets {
+    font-size: $baseFontSixe - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSixe - 2px;
+  }
+}
+
 
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $conteinerWidht + 20px ;
   min-height: 100%;
   overflow: hidden;
 }
 .conteiner {
-  width: $conteinerWidht;
+  width: 95%; 
+  max-width: $conteinerWidht;
   margin: 0 auto;
+  position: relative;
 }
 img {
   display: block;

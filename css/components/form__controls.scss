@@ -1,8 +1,9 @@
 .form__controls {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 21px;
-  &:last-child {
-    margin-bottom: 0;
+  margin-bottom: 1.31rem;
+  @include phones {
+    justify-content: center;
   }
+ 
 }
+

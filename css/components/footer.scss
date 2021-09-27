@@ -1,0 +1,21 @@
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: rem(86px);
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include phones {
+        flex-direction: column;
+
+    }
+    
+}

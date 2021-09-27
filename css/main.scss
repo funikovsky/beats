@@ -1,13 +1,21 @@
 
 
-$conteinerWidht: 915px;
-$baseFontSixe:16px;
+$conteinerWidht: 940px;
+$baseFontSixe: 16px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 
 //z-index
 $z-fixed-menu: 100;
 
 //normalize
 @import "./normalize.css";
+
+@import "media";
 
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
@@ -29,7 +37,10 @@ $z-fixed-menu: 100;
 @import "components/form__controls";
 @import "components/radio";
 @import "components/fixed-menu";
-
-
-
+@import "components/map";
+@import "components/footer";
+@import "components/contacts";
+@import "components/phone-number";
+@import "components/socials";
+@import "components/humburger";
 
