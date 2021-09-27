@@ -10,7 +10,10 @@
     }
     &:hover {
         .socials__icon-symbol {
-            fill:#000;
+            
+            animation: change_fill 0.5s, popup 2s;
+            fill: #000; 
+            
         }
     }
 }
@@ -21,5 +24,6 @@
     width: rem(30px);
     height: rem(30px);
     fill: #B3B3B3;
- 
+    transition: .3s; 
+   
 }
