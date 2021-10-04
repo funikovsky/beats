@@ -318,6 +318,10 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
   white-space: nowrap;
 }
+.menu__link:hover {
+  font-weight: bold;
+  color: #E01F3D;
+}
 
 .phone-number {
   display: -webkit-box;
@@ -1573,6 +1577,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-size: 2.25rem;
   line-height: 4.5rem;
+}
+.menu--vertical .menu__list .menu__link:hover {
+  font-weight: bold;
 }
 
 .humburger {

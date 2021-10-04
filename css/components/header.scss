@@ -62,6 +62,10 @@
 .menu__link {
   color: black;
   white-space: nowrap;
+  &:hover {
+    font-weight: bold;
+    color: #E01F3D;
+  }
   
   
 }

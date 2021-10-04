@@ -46,6 +46,7 @@
     
     & .menu__item {
         margin: 0;
+
        
         
       
@@ -58,6 +59,9 @@
         font-weight: normal;
         font-size: rem(36px);
         line-height: rem(72px);
+        &:hover {
+            font-weight: bold;
+        }
         
         
 
