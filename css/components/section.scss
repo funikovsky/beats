@@ -21,21 +21,14 @@
 
 .section--decor {
   position: relative;
-  &::after {
-    position: absolute;
-    content: url(../img/treangle.png);
-    top: 0;
-    left: 3.75rem;
-    
-    
-  }
+  
   &::before {
     position: absolute;
     content: url(../img/Polygon.png);
     top: 100%;
     width: 3.75rem;
     height: 3.75rem;
-    right: 6.25rem;
+    right: 5%;
     display: block;
     transform: translateY(-44%);
 
@@ -46,6 +39,29 @@
       display: none;
     }
   }*/
+}
+
+.products-section {
+  background-color: #F8FAF9;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: url(../img/treangle.png);
+    top: 0;
+    left: 5%;
+    transform: translateY(-59%);
+    
+    
+  }
+  &::before {
+    position: absolute;
+    content: url(../../img/Rectangle.png);
+    top:100%;
+    right: 5%;
+    transform: translateY(-29%);
+
+
+  }
 }
  
 

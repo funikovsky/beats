@@ -11,16 +11,10 @@ $phones: 480px;
 
 //z-index
 $z-fixed-menu: 100;
+$z-fullscreen-menu: 200;
 
-@keyframes change_fill {
-    0% { fill: #1bce4f; }
-    35% { fill: #1bceb1; }
-    85% { fill: #49549E; }
-    100% {fill: #000}
-   
-    
-    
-}
+
+
 
 //normalize
 @import "./normalize.css";
@@ -39,6 +33,8 @@ $z-fixed-menu: 100;
 @import "components/btn";
 @import "components/section";
 @import "components/headline";
+@import "components/product";
+@import "components/dropdown";
 @import "components/benefits";
 @import "components/benefit";
 @import "components/reviews";
@@ -52,5 +48,7 @@ $z-fixed-menu: 100;
 @import "components/contacts";
 @import "components/phone-number";
 @import "components/socials";
+@import "components/fullscreen-menu";
 @import "components/humburger";
+@import "components/close";
 
