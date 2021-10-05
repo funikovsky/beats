@@ -21,6 +21,7 @@ close.addEventListener("click", e => {
 
 menuLink.forEach(item => {
     item.addEventListener('click', e => {
+        e.preventDefault();
         fullMenu.classList.remove('active');
     })
 })
