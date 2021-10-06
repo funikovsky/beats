@@ -1,0 +1,70 @@
+
+
+.team__list {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
+
+.member {
+    max-width: rem(220px);
+}
+
+.member__photo {
+    width: rem(220px);
+    height: rem(290px);
+    margin-bottom: 24px;
+    &--img {
+        max-width: 100%;
+    }
+}
+
+.member__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(11px);
+
+    &-decor{
+        width: rem(9px);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 0 0 0;
+        
+
+        &-symbol {
+            width: 9px;
+            height: 9px;
+        }
+    }   
+}
+
+.decor--active {
+
+    transform: rotate(180deg);
+
+}
+
+.member__name {
+    font-weight: bold;
+    line-height: rem(21px);
+    font-size: rem(18px);
+    text-align: center;
+    margin-right: 4px;
+}
+
+.member__desc {
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+
+}
+.member__desc--active {
+    height: 70px;
+}
+

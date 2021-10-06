@@ -1,0 +1,28 @@
+@-webkit-keyframes change_fill {
+  0% {
+    fill: #1bce4f;
+  }
+  35% {
+    fill: #1bceb1;
+  }
+  85% {
+    fill: #49549E;
+  }
+  100% {
+    fill: #000;
+  }
+}
+@keyframes change_fill {
+  0% {
+    fill: #1bce4f;
+  }
+  35% {
+    fill: #1bceb1;
+  }
+  85% {
+    fill: #49549E;
+  }
+  100% {
+    fill: #000;
+  }
+}
