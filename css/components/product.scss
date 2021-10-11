@@ -1,6 +1,9 @@
 
 .products-slider {
     position: relative;
+    
+    
+    overflow: hidden;
 }
 .products-slider__arrow {
     display: block;
@@ -12,34 +15,56 @@
     border-top: 3px solid #000000;
     border-right: 3px solid #000000;
     border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    &:hover {
+        border-top: 6px solid #f30505;
+        border-right: 6px solid #f30505;
+    }
     @include tablets {
         top: 20%;
     }
     &--next {
         transform: rotate(45deg);
-        right: 0;
+        right: 7px;
+        z-index:20;
+       
         @include tablets {
-            right: 10%;
+            right: 14%;
         }
         @include phones {
-            right: 0;
+            right: 1%;
         }
 
     }
     &--prev {
         transform: rotate(-135deg);
-        left: 0;
+        left: 7px;
+        z-index:20;
         @include tablets {
-            left: 10%;
+            left: 14%;
         }
         @include phones {
-            left: 0;
+            left: 1%;
         }
     }
     
 }
 
-
+.products {
+    display: flex;
+    position: relative;
+    right: 0;
+    transition: 00.3s;
+    
+    
+    
+}
+.product {
+    flex: 1 0 100%
+    
+    
+}
 
 .products__item {
     padding: 0 0 0 4%;
@@ -59,6 +84,13 @@
         background: none;
     }
     
+}
+.product__container--red--beats {
+    background: url("../img/redbeats.png")left center/50% no-repeat;
+    @include tablets {
+        
+        background: none;
+    }
 }
 
 
@@ -82,8 +114,19 @@
 
         }
     }
+
+
     @include phones {
         padding: 10px 0;
+    }
+}
+
+.product__desc--red--beats {
+    @include tablets {
+        &::before {
+            background: url("../img/redbeats.png")center center/contain no-repeat;
+        }
+        
     }
 }
 

@@ -2,21 +2,46 @@
 
 .team__list {
     display: flex;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: rem(20px);
+    row-gap: rem(84px);
     flex-wrap: wrap;
     
     justify-content: center;
+
+    @include tablets {
+        row-gap: rem(16px);
+    }
+}
+.team__list--version--mobile {
+    display: none;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.team__list--version--desktop {
+    @include tablets {
+        display: none;
+    }
 }
 
 .member {
     max-width: rem(220px);
+    position: relative;
+    @include phones {
+        max-width: 17rem;
+    }
 }
 
 .member__photo {
     width: rem(220px);
     height: rem(290px);
     margin-bottom: 24px;
+    @include phones {
+        margin: 13px auto 18px;
+    }
     &--img {
         max-width: 100%;
     }
@@ -25,8 +50,9 @@
 .member__info {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: rem(11px);
+    cursor: pointer ;
 
     &-decor{
         width: rem(9px);
@@ -38,8 +64,15 @@
         
 
         &-symbol {
-            width: 9px;
-            height: 9px;
+            width: rem(9px);
+            height: rem(9px);
+            fill: #E01F3D;
+            @include tablets {
+                fill: #365A49;
+            }
+            @include phones {
+                fill: #E01F3D;
+            }
         }
     }   
 }
@@ -59,12 +92,38 @@
 }
 
 .member__desc {
+    position: absolute;
     text-align: center;
+    top:100%;
     height: 0;
     overflow: hidden;
+    transition: 0.3s ease-in-out;
+    @include tablets {
+        position: relative;
+    }
+    
+    &-content {
+        
+        
+        height: 100px;
+        @include tablets {
+            height: 390px;
+        }
+        @include phones {
+            height: 350px;
+        }
+    }
 
 }
-.member__desc--active {
-    height: 70px;
+.member__profession {
+    color: black;
+    @include tablets {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 }
+.member__desc-text {
+    color: #666666;
+}
+
 
