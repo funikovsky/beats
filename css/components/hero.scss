@@ -1,5 +1,7 @@
 .hero {
-  min-height: 100vh;
+  //min-height: 100vh;
+  height: 100%;
+  min-height: rem(650px);
   background: #F5F5F5;
   color: #292929;
   position: relative;
@@ -21,7 +23,8 @@
 
 }
 .hero__conteiner {
-  min-height: 100vh;
+  //min-height: 100vh;
+  height: 100%;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -52,6 +55,11 @@
       height: rem(323px);
       border-radius: 50%;
       background: url("../img/Ellipse.png")center center/contain no-repeat;
+      @include phones {
+        width: 18rem;
+        height: 18rem;
+
+      }
     }
 
     .hero__main-title {

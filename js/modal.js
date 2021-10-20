@@ -3,9 +3,13 @@ const validateFields = (form, fieldsArray) => {
     fieldsArray.forEach(field => {
 
         field.removeClass("input-error")
+        field.attr('placeholder', '');
 
         if(field.val().trim() == "") {
             field.addClass("input-error");
+            field.attr('placeholder', 'Заполните это поле');
+                    
+            
         }
     });
 
@@ -27,6 +31,11 @@ $('.form').submit(e => {
     const phone = form.find("[name='phone']");
     const comment = form.find("[name='comment']");
     const to = form.find("[name='to']");
+
+   
+
+    
+    
 
     const modal = $("#modal");
     const content = modal.find(".modal__content"); 
@@ -52,6 +61,8 @@ $('.form').submit(e => {
 
         request.done((data) => {
             content.text(data.message)
+            $('.form').trigger("reset");
+
         });
 
         request.fail((data) => {

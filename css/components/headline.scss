@@ -2,7 +2,9 @@
   margin-bottom: 1.125rem;
   padding: 8% 0 0 0;
   @include phones {
-    font-size: 2.29rem;
+    font-size: 2rem;
+    margin-bottom: 0.125rem;
+    padding: 0;
   }
 }
 .headline__subtitle {
@@ -12,7 +14,9 @@
   margin-bottom: 3.875rem;
   @include phones {
     padding: 0 6%;
-    font-size: 1.14rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
 }

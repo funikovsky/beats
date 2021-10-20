@@ -71,6 +71,9 @@
     @include tablets {
         padding: 0;
     }
+    @include phones{
+        display: flex;
+    }
     
 }
 
@@ -111,6 +114,12 @@
             height: rem(306px);
             border-radius: 50%;
             background: url("../img/beats_slider.png")center center/contain no-repeat;
+            @include phones {
+
+                width: 17rem;
+                height: 17rem;
+
+            }
 
         }
     }
@@ -184,7 +193,7 @@
 
         }
         @include phones {
-            padding: rem(26px) 5% 0;
+            padding: 0.6rem 5% 0;
             
 
         }
@@ -213,7 +222,8 @@
         
     }
     @include phones {
-        padding: 0 11%;
+        padding: 0 1%;
+        margin-bottom: 0.6rem;
 
     }
 }

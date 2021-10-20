@@ -4,6 +4,12 @@
   right: 0;
   transform: translateY(-50%);
   z-index: $z-fixed-menu;
+  &.fixed-menu--shadowed .fixed-menu__item .fixed-menu__link {
+    &::before {
+      background: white;
+    }
+
+  }
   @include tablets {
     display: none;
   }
@@ -21,6 +27,7 @@
       }
     }
   }
+  
 
 }
 .fixed-menu__link {

@@ -8,6 +8,10 @@
   @include tablets {
     margin-bottom: rem(32px);
   }
+  @include phones {
+    margin-bottom: 1rem;
+    padding: 2.63rem 0.63rem;
+  }
 
   &::before {
     content: "";

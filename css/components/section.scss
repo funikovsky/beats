@@ -1,5 +1,9 @@
 .section {
-  min-height: 100vh;
+  
+  //min-height: 100vh;
+  height: 100%;
+  min-height: rem(650px);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +20,9 @@
 }
 .section__title-reviews {
   margin-bottom: 2.125rem;
-  padding: 8% 0 0 0;
+  @include phones {
+    margin-bottom: 0.125rem;
+  }
 }
 
 .section--decor {

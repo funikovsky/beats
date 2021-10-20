@@ -12,6 +12,7 @@ $phones: 480px;
 //z-index
 $z-fixed-menu: 100;
 $z-fullscreen-menu: 200;
+$z-humburger-menu: 50;
 
 
 
@@ -38,6 +39,7 @@ $z-fullscreen-menu: 200;
 @import "components/benefits";
 @import "components/benefit";
 @import "components/team";
+@import "components/accordion";
 @import "components/reviews";
 @import "components/interactive-avatar";
 @import "components/form";
@@ -53,4 +55,5 @@ $z-fullscreen-menu: 200;
 @import "components/humburger";
 @import "components/close";
 @import "components/modal";
+@import "components/player";
 
